@@ -6,9 +6,9 @@ if(!isset($_GET['action'])){
    switch($action)
     {
         case 'lodge':
-            {require('../../views/Lodge.php');break;}    
+            {require('../views/Lodge.php');break;}    
         case 'create':
-            {require('../../views/CreateLogdge.php');break;}
+            {require('../views/CreateLodge.php');break;}
     }   
 }
 
