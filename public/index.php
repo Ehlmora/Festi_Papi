@@ -3,7 +3,6 @@
 if(!isset($_SESSION['user_co']))
 {
     session_start();
-    include "../views/login.php";
 }
 try{
 /*     if(!isset($_GET['uc'])){
