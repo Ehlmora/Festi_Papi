@@ -21,6 +21,8 @@ try {
             {require('controller/c_userManagement.php');break;}
         case 'lodge':
             {require('../app/controllers/Lodge.php');break;}
+        case 'booking':
+            {require('../app/controllers/Booking.php');break;}
         case 'logOut':
             {require('controller/c_logOut.php');break;}
     }
