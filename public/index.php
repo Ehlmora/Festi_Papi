@@ -1,16 +1,18 @@
 <?php
-include "../views/Home.php";
+include "../views/Components/Head.php";
+include "../views/Components/Header.php";
+include "../views/Components/Navbar.php";
 if(!isset($_SESSION))
 {
     session_start();
 }
-try{
+try {
 /*     if(!isset($_GET['uc'])){
         $uc ='home';
     }else{
         $uc = $_GET['uc'];
     } */
-    $uc = $_GET['uc'];
+    $uc = isset($_GET['uc']) ? $_GET['uc'] : '';
     switch($uc)
     {
         case 'home':
@@ -22,7 +24,8 @@ try{
         case 'logOut':
             {require('controller/c_logOut.php');break;}
     }
-}catch(Exception $e){
+} catch(Exception $e) {
     echo('Erreur PDO  dans '.$e->getFile().' ligne : '.$e->getLine().' : '.$e->getMessage());
 
 }
+include "../views/Components/Footer.php";

@@ -1,0 +1,41 @@
+:root {
+    --orange: #f97b5d;
+    --green: #75C8CC;
+}
+
+a {
+    color: var(--orange);
+}
+
+a:hover {
+    color: var(--green);
+}
+
+.icon {
+    height: 10px;
+    width: 10px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 48px;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    z-index: 100;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.position-sticky {
+    position: sticky;
+    height: calc(100vh-48px);
+    padding-top: .5rem;;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.navbar-brand {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 1rem;
+}
