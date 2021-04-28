@@ -1,11 +1,4 @@
 <?php
-require_once("../app/models/Database.php");
-require_once("../app/models/Lodge.php");
-$listLodge = getLodge();
-
-
-
-
 ?>
 <div>
     <h1>Hébergement</h1>
